@@ -16,5 +16,8 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func startButton(_ sender: UIButton) {
+        performSegue(withIdentifier: "start", sender: self)
+    }
 }
 
