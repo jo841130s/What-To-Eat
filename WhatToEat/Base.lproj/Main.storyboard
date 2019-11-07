@@ -234,6 +234,10 @@
                                                 <state key="normal" title="Share">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="shareButton:" destination="xLe-lD-hST" eventType="touchUpInside" id="PPH-i8-ouw"/>
+                                                    <segue destination="yjw-ha-eag" kind="show" identifier="share" id="7dp-ko-loj"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lH1-17-2iR">
                                                 <rect key="frame" x="0.0" y="54" width="100" height="44"/>
@@ -305,6 +309,49 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LFu-rQ-QC0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="928.98550724637687" y="99.776785714285708"/>
+        </scene>
+        <!--Share View Controller-->
+        <scene sceneID="k7X-Iw-2kS">
+            <objects>
+                <viewController id="yjw-ha-eag" customClass="ShareViewController" customModule="WhatToEat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7US-RX-nbQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="y0g-4b-tfZ">
+                                <rect key="frame" x="60" y="50" width="294" height="200"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="KrX-Gm-Xzp"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gko-EH-Dcf">
+                                <rect key="frame" x="149" y="302" width="117" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <state key="normal" title="share"/>
+                                <connections>
+                                    <action selector="shareButton:" destination="yjw-ha-eag" eventType="touchUpInside" id="IhA-Hv-QF1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.84022551774978638" green="0.94160264730453491" blue="0.94214028120040894" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="y0g-4b-tfZ" firstAttribute="top" secondItem="kVn-gU-bfJ" secondAttribute="top" constant="50" id="2XG-iL-69z"/>
+                            <constraint firstItem="y0g-4b-tfZ" firstAttribute="leading" secondItem="kVn-gU-bfJ" secondAttribute="leading" constant="60" id="BE1-UC-NEM"/>
+                            <constraint firstItem="kVn-gU-bfJ" firstAttribute="trailing" secondItem="y0g-4b-tfZ" secondAttribute="trailing" constant="60" id="vC9-FF-PrR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kVn-gU-bfJ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Gaq-EM-T8W"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PUe-I1-voz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1766.6666666666667" y="99.776785714285708"/>
         </scene>
     </scenes>
     <resources>

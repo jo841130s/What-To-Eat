@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C9027E042373F23200667AE8 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9027E032373F23200667AE8 /* ShareViewController.swift */; };
+		C9027E072373F4F300667AE8 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9027E062373F4F300667AE8 /* Social.framework */; };
 		C935B43623728C6100C54117 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C935B43523728C6100C54117 /* AppDelegate.swift */; };
 		C935B43823728C6100C54117 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C935B43723728C6100C54117 /* SceneDelegate.swift */; };
 		C935B43A23728C6100C54117 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C935B43923728C6100C54117 /* ViewController.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C9027E032373F23200667AE8 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		C9027E062373F4F300667AE8 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		C935B43223728C6100C54117 /* WhatToEat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatToEat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C935B43523728C6100C54117 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C935B43723728C6100C54117 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,17 +37,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9027E072373F4F300667AE8 /* Social.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C9027E052373F4F300667AE8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9027E062373F4F300667AE8 /* Social.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C935B42923728C6100C54117 = {
 			isa = PBXGroup;
 			children = (
 				C935B43423728C6100C54117 /* WhatToEat */,
 				C935B43323728C6100C54117 /* Products */,
+				C9027E052373F4F300667AE8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +76,7 @@
 				C935B43723728C6100C54117 /* SceneDelegate.swift */,
 				C935B43923728C6100C54117 /* ViewController.swift */,
 				C935B449237295A100C54117 /* SecondViewController.swift */,
+				C9027E032373F23200667AE8 /* ShareViewController.swift */,
 				C935B43B23728C6100C54117 /* Main.storyboard */,
 				C935B43E23728C6400C54117 /* Assets.xcassets */,
 				C935B44023728C6400C54117 /* LaunchScreen.storyboard */,
@@ -143,6 +158,7 @@
 			files = (
 				C935B44A237295A100C54117 /* SecondViewController.swift in Sources */,
 				C935B43A23728C6100C54117 /* ViewController.swift in Sources */,
+				C9027E042373F23200667AE8 /* ShareViewController.swift in Sources */,
 				C935B43623728C6100C54117 /* AppDelegate.swift in Sources */,
 				C935B43823728C6100C54117 /* SceneDelegate.swift in Sources */,
 			);
