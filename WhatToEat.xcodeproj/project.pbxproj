@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C8A82C3123A917120036D1EC /* EditTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A82C3023A917120036D1EC /* EditTableViewController.swift */; };
 		C8A82C3323A919220036D1EC /* FoodOptionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A82C3223A919220036D1EC /* FoodOptionController.swift */; };
-		C8A82C3623A929120036D1EC /* FoodOption.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C8A82C3423A929120036D1EC /* FoodOption.xcdatamodeld */; };
 		C9027E072373F4F300667AE8 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9027E062373F4F300667AE8 /* Social.framework */; };
 		C935B43623728C6100C54117 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C935B43523728C6100C54117 /* AppDelegate.swift */; };
 		C935B43823728C6100C54117 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C935B43723728C6100C54117 /* SceneDelegate.swift */; };
@@ -21,9 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C8A82C3023A917120036D1EC /* EditTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTableViewController.swift; sourceTree = "<group>"; };
 		C8A82C3223A919220036D1EC /* FoodOptionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodOptionController.swift; sourceTree = "<group>"; };
-		C8A82C3523A929120036D1EC /* FoodOption.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FoodOption.xcdatamodel; sourceTree = "<group>"; };
 		C9027E062373F4F300667AE8 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		C935B43223728C6100C54117 /* WhatToEat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatToEat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C935B43523728C6100C54117 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -80,9 +76,7 @@
 				C935B43723728C6100C54117 /* SceneDelegate.swift */,
 				C935B43923728C6100C54117 /* ViewController.swift */,
 				C935B449237295A100C54117 /* SecondViewController.swift */,
-				C8A82C3023A917120036D1EC /* EditTableViewController.swift */,
 				C8A82C3223A919220036D1EC /* FoodOptionController.swift */,
-				C8A82C3423A929120036D1EC /* FoodOption.xcdatamodeld */,
 				C935B43B23728C6100C54117 /* Main.storyboard */,
 				C935B43E23728C6400C54117 /* Assets.xcassets */,
 				C935B44023728C6400C54117 /* LaunchScreen.storyboard */,
@@ -163,11 +157,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C935B44A237295A100C54117 /* SecondViewController.swift in Sources */,
-				C8A82C3623A929120036D1EC /* FoodOption.xcdatamodeld in Sources */,
 				C935B43A23728C6100C54117 /* ViewController.swift in Sources */,
 				C8A82C3323A919220036D1EC /* FoodOptionController.swift in Sources */,
 				C935B43623728C6100C54117 /* AppDelegate.swift in Sources */,
-				C8A82C3123A917120036D1EC /* EditTableViewController.swift in Sources */,
 				C935B43823728C6100C54117 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,19 +358,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		C8A82C3423A929120036D1EC /* FoodOption.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				C8A82C3523A929120036D1EC /* FoodOption.xcdatamodel */,
-			);
-			currentVersion = C8A82C3523A929120036D1EC /* FoodOption.xcdatamodel */;
-			path = FoodOption.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = C935B42A23728C6100C54117 /* Project object */;
 }

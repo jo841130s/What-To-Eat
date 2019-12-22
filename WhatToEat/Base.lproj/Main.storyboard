@@ -130,11 +130,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="al1-sO-G6l">
-                                <rect key="frame" x="57" y="84" width="300" height="32"/>
+                                <rect key="frame" x="50" y="84" width="314" height="32"/>
                                 <color key="backgroundColor" red="0.84426838159999995" green="0.9415889382" blue="0.94210022689999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="0hh-2k-5et"/>
-                                    <constraint firstAttribute="width" constant="300" id="b5a-ZS-dsU"/>
                                 </constraints>
                                 <segments>
                                     <segment title="Breakfast"/>
@@ -222,29 +221,11 @@
                                 <rect key="frame" x="0.0" y="653.5" width="414" height="208.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="SAs-Wr-dyc">
-                                        <rect key="frame" x="92" y="82" width="230" height="45"/>
+                                        <rect key="frame" x="157" y="82.5" width="100" height="44"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WTz-ux-yxf">
-                                                <rect key="frame" x="0.0" y="0.0" width="100" height="45"/>
-                                                <color key="backgroundColor" red="0.44541054959999998" green="0.78897160290000001" blue="0.80725914239999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="100" id="6VC-oX-4cq"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="25"/>
-                                                <state key="normal" title="Edit">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="editButton:" destination="xLe-lD-hST" eventType="touchUpInside" id="FO8-7X-fia"/>
-                                                    <segue destination="cYz-dO-0Bd" kind="show" identifier="goToEdit" id="eiM-qD-hs9"/>
-                                                </connections>
-                                            </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lH1-17-2iR">
-                                                <rect key="frame" x="130" y="0.0" width="100" height="45"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="44"/>
                                                 <color key="backgroundColor" red="0.44541054959999998" green="0.78897160290000001" blue="0.80725914239999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="100" id="eBI-DN-TlB"/>
-                                                </constraints>
                                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="25"/>
                                                 <state key="normal" title="Home">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -255,13 +236,13 @@
                                             </button>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="45" id="M75-IS-Pt2"/>
+                                            <constraint firstAttribute="width" constant="100" id="9SI-iS-LEL"/>
                                         </constraints>
                                     </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="SAs-Wr-dyc" firstAttribute="centerY" secondItem="7nb-Iw-FKT" secondAttribute="centerY" id="zan-lh-Zra"/>
-                                    <constraint firstItem="SAs-Wr-dyc" firstAttribute="centerX" secondItem="7nb-Iw-FKT" secondAttribute="centerX" id="zjN-5H-ARL"/>
+                                    <constraint firstItem="SAs-Wr-dyc" firstAttribute="centerY" secondItem="7nb-Iw-FKT" secondAttribute="centerY" id="1ZU-nT-bu1"/>
+                                    <constraint firstItem="SAs-Wr-dyc" firstAttribute="centerX" secondItem="7nb-Iw-FKT" secondAttribute="centerX" id="lQD-03-B3M"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Mw-8F-NSs">
@@ -290,8 +271,10 @@
                             <constraint firstItem="7nb-Iw-FKT" firstAttribute="bottom" secondItem="eua-JB-05S" secondAttribute="bottom" id="HDs-Dr-vWC"/>
                             <constraint firstItem="al1-sO-G6l" firstAttribute="top" secondItem="eua-JB-05S" secondAttribute="top" constant="40" id="IIe-7v-BJt"/>
                             <constraint firstItem="UZb-7g-jV7" firstAttribute="top" secondItem="4Mw-8F-NSs" secondAttribute="bottom" id="IO1-Az-PRZ"/>
+                            <constraint firstItem="al1-sO-G6l" firstAttribute="leading" secondItem="eua-JB-05S" secondAttribute="leading" constant="50" id="LTR-ve-JNo"/>
                             <constraint firstItem="UZb-7g-jV7" firstAttribute="centerX" secondItem="NhZ-Is-SJq" secondAttribute="centerX" id="LXC-n6-oyq"/>
                             <constraint firstItem="UZb-7g-jV7" firstAttribute="leading" secondItem="eua-JB-05S" secondAttribute="leading" id="T2C-Tn-M4h"/>
+                            <constraint firstItem="eua-JB-05S" firstAttribute="trailing" secondItem="al1-sO-G6l" secondAttribute="trailing" constant="50" id="WZP-dF-nAq"/>
                             <constraint firstItem="4Mw-8F-NSs" firstAttribute="leading" secondItem="eua-JB-05S" secondAttribute="leading" id="crm-fr-Hu0"/>
                             <constraint firstItem="al1-sO-G6l" firstAttribute="centerX" secondItem="NhZ-Is-SJq" secondAttribute="centerX" id="dst-Y7-Ydg"/>
                             <constraint firstItem="eua-JB-05S" firstAttribute="trailing" secondItem="7nb-Iw-FKT" secondAttribute="trailing" id="fs8-rl-zy7"/>
@@ -316,72 +299,10 @@
             </objects>
             <point key="canvasLocation" x="928.98550724637687" y="99.776785714285708"/>
         </scene>
-        <!--Edit Table View Controller-->
-        <scene sceneID="Dii-4H-Brr">
-            <objects>
-                <viewController id="cYz-dO-0Bd" customClass="EditTableViewController" customModule="WhatToEat" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="MpH-ie-wAq">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ad0-kv-Zu0">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edit Food Option" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hx7-Iq-dcX">
-                                        <rect key="frame" x="20" y="31" width="303" height="38"/>
-                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yDC-D5-rZn">
-                                        <rect key="frame" x="344" y="29.5" width="40" height="39"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="yDC-D5-rZn" secondAttribute="height" multiplier="1:1" id="bPn-Wh-Sz1"/>
-                                        </constraints>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" backgroundImage="square.and.pencil" catalog="system">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" red="0.51859080791473389" green="0.77950805425643921" blue="0.79813414812088013" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstItem="hx7-Iq-dcX" firstAttribute="leading" secondItem="ad0-kv-Zu0" secondAttribute="leading" constant="20" id="5vd-c5-JfL"/>
-                                    <constraint firstItem="yDC-D5-rZn" firstAttribute="top" secondItem="ad0-kv-Zu0" secondAttribute="top" constant="30" id="7vt-wp-KWL"/>
-                                    <constraint firstAttribute="height" constant="100" id="YDi-Aq-drB"/>
-                                    <constraint firstAttribute="trailing" secondItem="yDC-D5-rZn" secondAttribute="trailing" constant="30" id="cVo-xb-2QF"/>
-                                    <constraint firstAttribute="bottom" secondItem="yDC-D5-rZn" secondAttribute="bottom" constant="30" id="t0I-xa-B3i"/>
-                                    <constraint firstItem="hx7-Iq-dcX" firstAttribute="centerY" secondItem="ad0-kv-Zu0" secondAttribute="centerY" id="xcp-Mg-fF5"/>
-                                </constraints>
-                            </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ttK-0a-eGV">
-                                <rect key="frame" x="0.0" y="100" width="414" height="708"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="ad0-kv-Zu0" firstAttribute="top" secondItem="goE-hM-vWb" secondAttribute="top" id="2VQ-BZ-81L"/>
-                            <constraint firstItem="goE-hM-vWb" firstAttribute="trailing" secondItem="ad0-kv-Zu0" secondAttribute="trailing" id="5Jq-Ih-fLp"/>
-                            <constraint firstItem="goE-hM-vWb" firstAttribute="trailing" secondItem="ttK-0a-eGV" secondAttribute="trailing" id="I4C-HE-3Te"/>
-                            <constraint firstItem="ad0-kv-Zu0" firstAttribute="leading" secondItem="goE-hM-vWb" secondAttribute="leading" id="kSK-8z-VmM"/>
-                            <constraint firstItem="ttK-0a-eGV" firstAttribute="top" secondItem="ad0-kv-Zu0" secondAttribute="bottom" id="mUw-Vl-j0D"/>
-                            <constraint firstItem="goE-hM-vWb" firstAttribute="bottom" secondItem="ttK-0a-eGV" secondAttribute="bottom" id="wtg-38-1rm"/>
-                            <constraint firstItem="ttK-0a-eGV" firstAttribute="leading" secondItem="goE-hM-vWb" secondAttribute="leading" id="yng-j5-qSD"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="goE-hM-vWb"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="E5a-bd-hki"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YGY-bu-0Sf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1766" y="99"/>
-        </scene>
     </scenes>
     <resources>
         <image name="arrow" width="140.5" height="227"/>
         <image name="plate" width="760.5" height="715.5"/>
-        <image name="square.and.pencil" catalog="system" width="64" height="58"/>
         <image name="蛋餅" width="231" height="231"/>
     </resources>
 </document>
