@@ -3,11 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C8A82C3323A919220036D1EC /* FoodOptionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A82C3223A919220036D1EC /* FoodOptionController.swift */; };
+		7265CD8D7526D6D6FDB8E28C /* Pods_WhatToEat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90832E85610A9A78C35772E0 /* Pods_WhatToEat.framework */; };
+		C8A82C5623B242A80036D1EC /* BreakfastEditTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A82C5523B242A80036D1EC /* BreakfastEditTableViewController.swift */; };
+		C8A82C5D23B246DB0036D1EC /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A82C5C23B246DB0036D1EC /* Food.swift */; };
+		C8A82C5F23B24B8C0036D1EC /* LunchEditTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A82C5E23B24B8C0036D1EC /* LunchEditTableViewController.swift */; };
+		C8A82C6123B24BAB0036D1EC /* DinnerEditTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A82C6023B24BAB0036D1EC /* DinnerEditTableViewController.swift */; };
+		C8A82C6323B24BC50036D1EC /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A82C6223B24BC50036D1EC /* EditViewController.swift */; };
 		C9027E072373F4F300667AE8 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9027E062373F4F300667AE8 /* Social.framework */; };
 		C935B43623728C6100C54117 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C935B43523728C6100C54117 /* AppDelegate.swift */; };
 		C935B43823728C6100C54117 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C935B43723728C6100C54117 /* SceneDelegate.swift */; };
@@ -19,7 +24,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C8A82C3223A919220036D1EC /* FoodOptionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodOptionController.swift; sourceTree = "<group>"; };
+		660AD8BE649EF67AE139B3E0 /* Pods-WhatToEat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatToEat.debug.xcconfig"; path = "Target Support Files/Pods-WhatToEat/Pods-WhatToEat.debug.xcconfig"; sourceTree = "<group>"; };
+		6D44AB6667F7A6F24B25426D /* Pods-WhatToEat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatToEat.release.xcconfig"; path = "Target Support Files/Pods-WhatToEat/Pods-WhatToEat.release.xcconfig"; sourceTree = "<group>"; };
+		90832E85610A9A78C35772E0 /* Pods_WhatToEat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhatToEat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8A82C5523B242A80036D1EC /* BreakfastEditTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakfastEditTableViewController.swift; sourceTree = "<group>"; };
+		C8A82C5C23B246DB0036D1EC /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		C8A82C5E23B24B8C0036D1EC /* LunchEditTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchEditTableViewController.swift; sourceTree = "<group>"; };
+		C8A82C6023B24BAB0036D1EC /* DinnerEditTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinnerEditTableViewController.swift; sourceTree = "<group>"; };
+		C8A82C6223B24BC50036D1EC /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EditViewController.swift; path = "/Users/jo/Desktop/What-To-Eat/WhatToEat/View/EditViewController.swift"; sourceTree = "<absolute>"; };
 		C9027E062373F4F300667AE8 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		C935B43223728C6100C54117 /* WhatToEat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatToEat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C935B43523728C6100C54117 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -38,16 +50,67 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9027E072373F4F300667AE8 /* Social.framework in Frameworks */,
+				7265CD8D7526D6D6FDB8E28C /* Pods_WhatToEat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6767D7D7E394A131E4DBE96D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				660AD8BE649EF67AE139B3E0 /* Pods-WhatToEat.debug.xcconfig */,
+				6D44AB6667F7A6F24B25426D /* Pods-WhatToEat.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C8A82C5723B246840036D1EC /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C8A82C5C23B246DB0036D1EC /* Food.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		C8A82C5923B246980036D1EC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C935B43923728C6100C54117 /* ViewController.swift */,
+				C935B449237295A100C54117 /* SecondViewController.swift */,
+				C8A82C6223B24BC50036D1EC /* EditViewController.swift */,
+				C8A82C5523B242A80036D1EC /* BreakfastEditTableViewController.swift */,
+				C8A82C5E23B24B8C0036D1EC /* LunchEditTableViewController.swift */,
+				C8A82C6023B24BAB0036D1EC /* DinnerEditTableViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C8A82C5A23B246A70036D1EC /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				C935B43B23728C6100C54117 /* Main.storyboard */,
+				C935B43E23728C6400C54117 /* Assets.xcassets */,
+				C935B44023728C6400C54117 /* LaunchScreen.storyboard */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
+		C8A82C5B23B246B50036D1EC /* Support File */ = {
+			isa = PBXGroup;
+			children = (
+				C935B43523728C6100C54117 /* AppDelegate.swift */,
+				C935B43723728C6100C54117 /* SceneDelegate.swift */,
+			);
+			path = "Support File";
+			sourceTree = "<group>";
+		};
 		C9027E052373F4F300667AE8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				C9027E062373F4F300667AE8 /* Social.framework */,
+				90832E85610A9A78C35772E0 /* Pods_WhatToEat.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -58,6 +121,7 @@
 				C935B43423728C6100C54117 /* WhatToEat */,
 				C935B43323728C6100C54117 /* Products */,
 				C9027E052373F4F300667AE8 /* Frameworks */,
+				6767D7D7E394A131E4DBE96D /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,15 +136,11 @@
 		C935B43423728C6100C54117 /* WhatToEat */ = {
 			isa = PBXGroup;
 			children = (
-				C935B43523728C6100C54117 /* AppDelegate.swift */,
-				C935B43723728C6100C54117 /* SceneDelegate.swift */,
-				C935B43923728C6100C54117 /* ViewController.swift */,
-				C935B449237295A100C54117 /* SecondViewController.swift */,
-				C8A82C3223A919220036D1EC /* FoodOptionController.swift */,
-				C935B43B23728C6100C54117 /* Main.storyboard */,
-				C935B43E23728C6400C54117 /* Assets.xcassets */,
-				C935B44023728C6400C54117 /* LaunchScreen.storyboard */,
 				C935B44323728C6400C54117 /* Info.plist */,
+				C8A82C5B23B246B50036D1EC /* Support File */,
+				C8A82C5A23B246A70036D1EC /* Layout */,
+				C8A82C5923B246980036D1EC /* View */,
+				C8A82C5723B246840036D1EC /* Data */,
 			);
 			path = WhatToEat;
 			sourceTree = "<group>";
@@ -92,9 +152,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C935B44623728C6400C54117 /* Build configuration list for PBXNativeTarget "WhatToEat" */;
 			buildPhases = (
+				073EB6AA7D6C1A4F8A8F67F0 /* [CP] Check Pods Manifest.lock */,
 				C935B42E23728C6100C54117 /* Sources */,
 				C935B42F23728C6100C54117 /* Frameworks */,
 				C935B43023728C6100C54117 /* Resources */,
+				24000B08B254B6EE41C48FB6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,16 +213,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		073EB6AA7D6C1A4F8A8F67F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WhatToEat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		24000B08B254B6EE41C48FB6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WhatToEat/Pods-WhatToEat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WhatToEat/Pods-WhatToEat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WhatToEat/Pods-WhatToEat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C935B42E23728C6100C54117 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C935B44A237295A100C54117 /* SecondViewController.swift in Sources */,
+				C8A82C5F23B24B8C0036D1EC /* LunchEditTableViewController.swift in Sources */,
 				C935B43A23728C6100C54117 /* ViewController.swift in Sources */,
-				C8A82C3323A919220036D1EC /* FoodOptionController.swift in Sources */,
+				C8A82C6123B24BAB0036D1EC /* DinnerEditTableViewController.swift in Sources */,
 				C935B43623728C6100C54117 /* AppDelegate.swift in Sources */,
+				C8A82C5D23B246DB0036D1EC /* Food.swift in Sources */,
+				C8A82C5623B242A80036D1EC /* BreakfastEditTableViewController.swift in Sources */,
 				C935B43823728C6100C54117 /* SceneDelegate.swift in Sources */,
+				C8A82C6323B24BC50036D1EC /* EditViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +410,7 @@
 		};
 		C935B44723728C6400C54117 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 660AD8BE649EF67AE139B3E0 /* Pods-WhatToEat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -320,6 +429,7 @@
 		};
 		C935B44823728C6400C54117 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D44AB6667F7A6F24B25426D /* Pods-WhatToEat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
