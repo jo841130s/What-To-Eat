@@ -7,6 +7,4 @@ target 'WhatToEat' do
 
   # Pods for WhatToEat
 
-pod 'RealmSwift'
-
 end
